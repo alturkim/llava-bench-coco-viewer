@@ -2,6 +2,8 @@ import streamlit as st
 import json
 import os
 from PIL import Image
+import json
+
 
 # Load data from JSONL file
 def load_data(jsonl_file):
@@ -52,7 +54,7 @@ def main():
 
     if mode == 'COCO':
         # Load data
-        data = load_data('coco2014_val_gpt4_qa_30x3.jsonl')
+        data = load_data('coco2014_val_gpt4_qa_30x3_ar2.jsonl')
 
         # Group data by image
         grouped_data = group_data_by_image(data)
